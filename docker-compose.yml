@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  shorturl:
+    image: ${DOCKER_REGISTRY-}shorturl
+    build:
+      context: .
+      dockerfile: ShortUrl/Dockerfile
